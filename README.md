@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Ruby on Rails application for demo purposes. You can clone it and after the preparation, it's ready to run.
 
-Things you may want to cover:
+### Preparation:
 
-* Ruby version
+- Create DB user:
+`$ createuser -P -d oci_phonebook`
 
-* System dependencies
+- Set the password of your user at PostgreSQL prompt
+`postgres=# \password oci_phonebook`
 
-* Configuration
+- Set your password as environment variable:
+`$ export 'APPNAME_DATABASE_PASSWORD="yoursecrethere"'`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Seed some dummy data:
+`$ bin/rails db:seed`
