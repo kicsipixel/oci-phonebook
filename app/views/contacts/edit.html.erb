@@ -1,6 +1,12 @@
-<h1>Editing Contact</h1>
+<div class="colums">
+  <div class="column is-half">
+    <h1 class="is-size-3">Edit contact</h1>
+  </div>
 
-<%= render 'form', contact: @contact %>
+  <%= render 'form', contact: @contact %>
 
-<%= link_to 'Show', @contact %> |
-<%= link_to 'Back', contacts_path %>
+  <div class="column is-half">
+    <%= link_to 'Show', @contact, class: "button is-small is-link is-light" %> |
+    <%= link_to 'Back', contacts_path, class: "button is-small is-link is-light" %>
+  </div>
+</div>

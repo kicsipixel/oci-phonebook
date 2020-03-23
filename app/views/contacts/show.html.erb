@@ -1,29 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Firstname:</strong>
-  <%= @contact.firstName %>
-</p>
-
-<p>
-  <strong>Lastname:</strong>
-  <%= @contact.lastName %>
-</p>
-
-<p>
-  <strong>Photo url:</strong>
-  <%= @contact.photo_url %>
-</p>
-
-<p>
-  <strong>Mobile:</strong>
-  <%= @contact.mobile %>
-</p>
-
-<p>
-  <strong>Work:</strong>
-  <%= @contact.work %>
-</p>
-
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+<div class="columns is-centered">
+  <div class="column is-three-quarters">
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <%= image_tag "#{@contact.photo_url}" %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4"><%= @contact.firstName %> <%= @contact.lastName %></p>
+              <p class="subtitle is-6">M: <%= @contact.mobile %> | T: <%= @contact.work %></p>
+              <p class="subtitle is-6"><%= link_to 'Edit', edit_contact_path(@contact), class: "button is-small is-link is-light" %> |
+              <%= link_to 'Back', contacts_path, class: "button is-small is-link is-light" %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

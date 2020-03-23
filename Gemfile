@@ -5,7 +5,7 @@ ruby '2.6.5'
 
 # Custom gems
 gem 'rest-client'
-
+gem "bulma-rails", "~> 0.8.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'

@@ -11,32 +11,46 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :firstName %>
-    <%= form.text_field :firstName %>
-  </div>
 
-  <div class="field">
-    <%= form.label :lastName %>
-    <%= form.text_field :lastName %>
-  </div>
+    <div class="column is-half">
+      <div class="field">
+          <%= form.label :firstName, class: "label" %>
+          <%= form.text_field :firstName, class: "input" %>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :photo_url %>
-    <%= form.text_field :photo_url %>
-  </div>
+    <div class="column is-half">
+      <div class="field">
+        <%= form.label :lastName, class: "label" %>
+        <%= form.text_field :lastName, class: "input" %>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :mobile %>
-    <%= form.text_field :mobile %>
-  </div>
+    <div class="column is-half">
+      <div class="field">
+        <%= form.label :photo_url, class: "label" %>
+        <%= form.text_field :photo_url, class: "input" %>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :work %>
-    <%= form.text_field :work %>
-  </div>
+    <div class="column is-half">
+      <div class="field">
+        <%= form.label :mobile, class: "label" %>
+        <%= form.text_field :mobile, class: "input" %>
+      </div>
+    </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+    <div class="column is-half">
+      <div class="field">
+        <%= form.label :work, class: "label" %>
+        <%= form.text_field :work, class: "input" %>
+      </div>
+    </div>
+
+    <div class="column is-half">
+      <div class="actions">
+        <%= form.submit class: "button is-normal" %>
+      </div>
+    </div>
+
 <% end %>
