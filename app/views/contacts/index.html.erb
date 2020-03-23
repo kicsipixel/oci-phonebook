@@ -19,7 +19,7 @@
       <tr>
         <td><%= contact.firstName %></td>
         <td><%= contact.lastName %></td>
-        <td><%= contact.photo_url %></td>
+        <td><%= image_tag "#{contact.photo_url}" %></td>
         <td><%= contact.mobile %></td>
         <td><%= contact.work %></td>
         <td><%= link_to 'Show', contact %></td>
